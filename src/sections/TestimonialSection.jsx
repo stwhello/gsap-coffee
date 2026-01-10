@@ -64,15 +64,16 @@ const TestimonialSection = () => {
     const video = vdRef.current[index];
     video.pause();
   };
+
   return (
-    <section className='testimonials-section'>
-      <div className='absolute size-full flex flex-col items-center pt-[5vw]'>
-        <h1 className='text-black first-title'>What's</h1>
-        <h1 className='text-light-brown sec-title'>Everyone</h1>
-        <h1 className='text-black third-title'>Talking</h1>
+    <section className="testimonials-section">
+      <div className="absolute size-full flex flex-col items-center pt-[5vw]">
+        <h1 className="text-black first-title">What's</h1>
+        <h1 className="text-light-brown sec-title">Everyone</h1>
+        <h1 className="text-black third-title">Talking</h1>
       </div>
 
-      <div className='pin-box'>
+      <div className="pin-box">
         {cards.map((card, index) => (
           <div
             key={index}
@@ -86,7 +87,7 @@ const TestimonialSection = () => {
               playsInline
               muted
               loop
-              className='size-full object-cover'
+              className="size-full object-cover"
             />
           </div>
         ))}
